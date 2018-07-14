@@ -114,7 +114,7 @@ public class BookingTest extends Teste {
         assertEquals(1, reservas.size());
     }
 
-  /*  @Test
+    @Test
     public void atualizarInvalido() {
         Calendar calendar = new GregorianCalendar();
         calendar.set(2010, Calendar.FEBRUARY, 23);
@@ -135,6 +135,6 @@ public class BookingTest extends Teste {
                                 startsWith("A data deve ser no futuro que a reserva está sendo efetuada.")));
             }
         }
-    }*/
+    }
 
 }

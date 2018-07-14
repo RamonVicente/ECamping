@@ -107,7 +107,7 @@ public class UserTest extends Teste{
 
     }
     
-   /* @Test
+    @Test
     public void atualizarInvalido() {
         User usuario = userService.findId((long) 7);
         usuario.setPassword("12345"); //Senha inválida
@@ -124,6 +124,6 @@ public class UserTest extends Teste{
                                 startsWith("Senha infadsad")));
             }
         }
-    }*/
+    }
 
 }

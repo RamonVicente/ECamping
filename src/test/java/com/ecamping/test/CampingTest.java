@@ -149,7 +149,7 @@ public class CampingTest extends Teste {
         assertEquals(update, camping.getInfo());
     }
 
-  /*  @Test
+    @Test
     public void atualizarInvalido() {
         Camping camping = campingService.findId((long) 5);
         camping.setPhone("1199667865"); //Telefone inválido
@@ -166,6 +166,6 @@ public class CampingTest extends Teste {
                                 startsWith("forma correta: (xx) xxxxx-xxxx")));
             }
         }
-    }*/
+    }
 
 }
