@@ -52,8 +52,8 @@ public class ListaCampistaBean {
         return "perfilCampista?faces-redirect=true";
     }
     
-    public void editProfile(){
-        this.userService.update(this.campistaAtual);
+    public void editProfile(User campista){
+        this.userService.update(campista);
         addMessage("Campista editado com sucesso!");
     }
     

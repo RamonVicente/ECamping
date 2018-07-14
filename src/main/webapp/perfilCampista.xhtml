@@ -9,7 +9,7 @@
     </h:head>
     <h:body>
         <ui:include src="/menu.xhtml" />
-        <p:growl id="msgs" showDetail="true" />
+        <p:growl id="growl" life="9000" />
         <p:fieldset legend="Configurações Campista">
             <h:form>
                 <p:panelGrid columns="2">
@@ -43,7 +43,7 @@
                                 />
                 </p:panelGrid>
 
-                <p:commandButton value="Editar" action="#{listaCampistas.editProfile()}" 
+                <p:commandButton value="Editar" actionListener="#{listaCampistas.editProfile(campistaAtual)}" 
                                  onclick="return confirm('Deseja mesmo editar este campista?')" ajax="false">
             </p:commandButton>
                            
