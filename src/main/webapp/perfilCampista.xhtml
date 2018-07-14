@@ -50,7 +50,27 @@
             </h:form>
 
         </p:fieldset>
-       
+        <p:fieldset legend="Reservas do Campista">
+            <p:dataTable var="booking" value="#{bookingBean.userBookings(campistaAtual.name)}" paginator="true" rows="5" lazy="true">
+                <p:column headerText="Data">
+                    <h:outputText value="#{booking.bookingDate}" />
+                </p:column>
+
+                <p:column headerText="Barraca">
+                    <h:outputText value="#{booking.tent}" />
+                </p:column>
+                
+                <p:column headerText="Camping">
+                    <h:outputText value="#{booking.camping.name}" />
+                </p:column>
+                <p:column headerText="Endereço">
+                    <h:outputText value="#{booking.camping.address.rua}-" />
+                    <h:outputText value="#{booking.camping.address.cidade} - " />
+                    <h:outputText value="#{booking.camping.address.estado}" />
+                </p:column>
+             
+            </p:dataTable>
+        </p:fieldset>
     </h:body>
 </html>
 
