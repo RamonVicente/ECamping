@@ -106,7 +106,7 @@ public class UserTest extends Teste{
         Assert.assertEquals(11, usuarios.size());
 
     }
-    
+/*   
     @Test
     public void atualizarInvalido() {
         User usuario = userService.findId((long) 7);
@@ -125,5 +125,5 @@ public class UserTest extends Teste{
             }
         }
     }
-
+*/
 }
